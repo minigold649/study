@@ -7,7 +7,7 @@ public class a {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
 
-    System.out.print("¼ýÀÚ 4ÀÚ¸® ÀÔ·ÂÇØÁÖ¼¼¿ä -> ");
+    System.out.print("ìˆ«ìž 4ìžë¦¬ë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš” -> ");
     int input = s.nextInt();
     int nums[] = new int[4];
 
@@ -15,11 +15,11 @@ public class a {
       nums[i] = input % 10;
       input = input / 10;
     }
-    System.out.println("¹è¿­ nums -> " + Arrays.toString(nums));
+    System.out.println("ë°°ì—´ nums -> " + Arrays.toString(nums));
     int result = nums[0] * nums[1] - nums[2] + nums[3];
 
     result = result % 10;
-    System.out.println("°á°ú -> " + result);
+    System.out.println("ê²°ê³¼ -> " + result);
     s.close();
   }
 }
