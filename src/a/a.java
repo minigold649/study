@@ -18,8 +18,9 @@ public class a {
     System.out.println("배열 nums -> " + Arrays.toString(nums));
     int result = nums[0] * nums[1] - nums[2] + nums[3];
 
+    System.out.println(nums[0] + " x " + nums[1] + " - " + nums[2] + " + " + nums[3] + " = " + result);
     result = result % 10;
-    System.out.println("결과 -> " + result);
+    System.out.println("일의 자리 숫자 -> " + result);
     s.close();
   }
 }
