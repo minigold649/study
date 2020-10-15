@@ -18,12 +18,14 @@ public class a_1 {
 		}
 		
 		System.out.println(Arrays.toString(pwd));
-		
+		int signCount = 0; // 특수문자 갯수
+		int numberCount = 0; // 소문자(알파벳) 갯수
+		int upperCase = 0; // 대문자(알파벳) 갯수
 		for (int i = 0 ; i < 10 ; i++) { 
-			if (pwd[i] == i) {
-				System.out.println("test");
-			} else {
-				System.out.println("a");
+			if(pwd[i] >=33 && pwd[i]<48) {
+				signCount++;
+			}else if(pwd[i] >= 48 && pwd[i] < 58) {
+				numberCount++;
 			}
 		}
 		s.close();
